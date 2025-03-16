@@ -23,7 +23,6 @@ const PhoneDetails = () => {
           headers: { "x-api-key": API_KEY },
         });
         setPhone(response.data);
-        console.log("RES: ", response.data)
         setLoading(false);
       } catch (error) {
         setLoading(false);
